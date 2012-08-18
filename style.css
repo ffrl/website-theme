@@ -61,13 +61,17 @@ body{
 /* Admin Top Navigation fixes */
 
 body.admin-bar .navbar-fixed-top{ 
-	top: 28px; 
+	top: 28px;
 }
 
 .navbar .brand{
-	color: #000 !important;
+	color: #dc0067 !important;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
 	font-weight: bold !important;
+}
+
+.navbar-inner {
+    border-bottom: 5px solid #FFCB05;
 }
 
 .nav-container{
@@ -85,6 +89,14 @@ input, textarea, select, .uneditable-input {
 
 .navbar-form, .navbar-search {
 	margin: 0 0 9px;
+}
+
+#menu-navigation li {
+    border-bottom: 4px solid transparent;
+}
+
+#menu-navigation li:hover {
+    border-bottom: 4px solid #dc0067;
 }
 
 .navbar-search{
