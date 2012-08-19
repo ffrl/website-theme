@@ -38,8 +38,8 @@
 		
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-  		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
-  		<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
+  		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
+  		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
 
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
