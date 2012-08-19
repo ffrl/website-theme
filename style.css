@@ -91,11 +91,11 @@ input, textarea, select, .uneditable-input {
 	margin: 0 0 9px;
 }
 
-#menu-navigation li {
+#menu-navigation > li {
     border-bottom: 4px solid transparent;
 }
 
-#menu-navigation li:hover {
+#menu-navigation > li:hover {
     border-bottom: 4px solid #dc0067;
 }
 
