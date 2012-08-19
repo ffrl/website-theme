@@ -99,6 +99,10 @@ input, textarea, select, .uneditable-input {
     border-bottom: 4px solid #dc0067;
 }
 
+#menu-navigation > li:hover ul {
+    display: block;
+}
+
 .navbar-search{
 	padding-left: 0;
 }
