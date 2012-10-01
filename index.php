@@ -6,11 +6,9 @@
 			?>
 			<div class="clearfix row-fluid">
 				<div class="hero-unit">
-				
-					<h1><?php bloginfo('title'); ?></h1>
-					
-					<p><?php bloginfo('description'); ?></p>
-				
+					<h2>Herzlich willkommen beim Freifunk Rheinland e.V.</h2>
+					<p>Auf diesen Seiten erfährst Du alles über das Freifunk-Projekt und unseren Verein, der sich das Ziel gesetzt hat den Freifunk im Rheinland zu fördern. Wir bauen unser eigenes Bürgerdatennetz - mach mit! Seit der Gründung des Vereins im Jahr 2011 haben sich schon einige Funkzellen gegründet.</p>
+					<p>Wenn Du unsere Unternehmung unterstützten möchstest kannst Du dies mit einer Mitgliedschaft oder einer Spende tun.</p>
 				</div>
 			</div>
 			<?php

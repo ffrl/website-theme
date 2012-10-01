@@ -99,7 +99,7 @@ input, textarea, select, .uneditable-input {
     border-bottom: 4px solid #dc0067;
 }
 
-#menu-navigation > li:hover ul {
+.no-js #menu-navigation > li:hover ul {
     display: block;
 }
 
@@ -263,10 +263,39 @@ video {
 .page-template-page-homepage-php .hero-unit,
 .blog .hero-unit{
 	padding: 1em;
+    background: #febf04; /* Old browsers */
+    background: -moz-linear-gradient(top, #febf04 0%, #ffd65e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febf04), color-stop(100%,#ffd65e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #febf04 0%,#ffd65e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #febf04 0%,#ffd65e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #febf04 0%,#ffd65e 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #febf04 0%,#ffd65e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febf04', endColorstr='#ffd65e',GradientType=0 ); /* IE6-9 */
+    }
+
+.blog .hero-unit h2{
+    color: #dc0067;
+}
+/* misc */
+
+.navbar ul.dropdown-menu li a {
+    color: #555;
 }
 
-.hero-unit h1 {
-	font-size: 3em;
+div.navbar ul.dropdown-menu li a:hover {
+    color: #fff;
+}
+
+.h2 a{
+    color: #dc0067;
+}
+
+a:hover{
+    color: #ffcb05;
+}
+
+a{
+    color: #dc0067;
 }
 
 /* comments */
@@ -580,17 +609,13 @@ blockquote.pull-left{
 	
 	.blog .hero-unit{
 		margin-top: 10px;
-	}
-	
+    }
+
 	.page-template-page-homepage-php .hero-unit,
 	.blog .hero-unit{
-		padding: 60px;
+		padding: 20px;
 	}
-	
-	.hero-unit h1 {
-		font-size: 60px;
-	}
-	
+
 	/* hide edit comment button and show on hover on desktop version */
 	.edit-comment{
 		display: none;
