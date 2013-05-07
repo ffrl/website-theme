@@ -45,8 +45,6 @@
 					
 					</article> <!-- end article -->
 					
-					<?php comments_template(); ?>
-					
 					<?php endwhile; ?>	
 					
 					<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>

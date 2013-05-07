@@ -1,8 +1,8 @@
 /*
 Theme Name: wp-bootstrap
 Theme URI: http://320press.com/wpbs
-Description: A simple responsive theme based on twitter's bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
-Version: 2.0
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 2.1
 Author: 320press
 Author URI: http://320press.com
 Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
@@ -44,14 +44,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	
 }
 
-/* for fun */
-* {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition:    all 0.2s ease;
-  -ms-transition:     all 0.2s ease;
-  -o-transition:      all 0.2s ease;
-}
-
 /* layout */
 
 body{
@@ -65,7 +57,11 @@ body.admin-bar .navbar-fixed-top{
 }
 
 .navbar .brand{
+<<<<<<< HEAD
 	color: #dc0067 !important;
+=======
+	color: #000;
+>>>>>>> 26c6885c6793ee6f34aa56c17c158d39a15093c6
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
 	font-weight: bold !important;
 }
@@ -147,10 +143,6 @@ input, textarea, select, .uneditable-input {
 	padding: 0 0 9px;
 }
 
-.sidebar{
-	margin-top: 18px !important;
-}
-
 #main article footer{
 	border-top: none;
 	margin-top: 0;
@@ -189,6 +181,7 @@ div[id*='attachment_']{
 }
 
 #main article img{
+	height: auto;
 	max-width: 100%;
 }
 
@@ -313,7 +306,7 @@ ol.commentlist ul.children{
 	margin-left: 0;
 }
 
-.comment .vcard div{
+.comment .vcard > div{
 	margin-top: 8px;
 	padding: 0 10px;
 }

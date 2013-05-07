@@ -27,10 +27,6 @@ function bones_head_cleanup() {
 	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );             // start link
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Links for Adjacent Posts
 	remove_action( 'wp_head', 'wp_generator' );                           // WP version
-	if (!is_admin()) {
-		wp_deregister_script('jquery');                                   // De-Register jQuery
-		wp_register_script('jquery', '', '', '', true);                   // It's already in the Header
-	}	
 }
 	// launching operation cleanup
 	add_action('init', 'bones_head_cleanup');
@@ -61,7 +57,7 @@ function bones_theme_support() {
 	add_theme_support('automatic-feed-links'); // rss thingy
 	// to add header image support go here: http://themble.com/support/adding-header-background-image-support/
 	// adding post format support
-	/*add_theme_support( 'post-formats',      // post formats
+	add_theme_support( 'post-formats',      // post formats
 		array( 
 			'aside',   // title less blurb
 			'gallery', // gallery of images
@@ -73,7 +69,7 @@ function bones_theme_support() {
 			'audio',   // audio
 			'chat'     // chat transcript 
 		)
-	);	*/
+	);	
 	add_theme_support( 'menus' );            // wp menus
 	register_nav_menus(                      // wp3+ menus
 		array( 
@@ -223,8 +219,5 @@ function filter_ptags_on_images($content){
 }
 
 add_filter('the_content', 'filter_ptags_on_images');
-
-
-	
 
 ?>
